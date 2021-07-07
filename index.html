@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="icon-96x96.webp">
+  <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Landing Page Kenzie Academy</title>
 </head>
@@ -15,20 +16,20 @@
 
     <div class="large-container">
       <!-- LOGO -->
-      <figure>
+      <!-- <figure>
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
         <figcaption>Logo Kenzie Academy</figcaption>  
-      </figure>
+      </figure> -->
 
       <!-- MENU DE NAVEGAÇÃO -->
-      <nav>
+      <!-- <nav>
         <ul>
           <li><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
           <li><a href="#3">Contato</a></li>
         </ul>
-      </nav>
-    </div>
+      </nav> -->
+    </div> 
 
   </header>
 
@@ -38,14 +39,14 @@
     <!-- ÁREA DE DESTAQUE -->
     <section class="secaoDestaque">
 
-      <h2>Lorem ipsum dolor sit Python</h2>
-      <p>100% Online</p>
+      <!-- <h2>Lorem ipsum dolor sit Python</h2>
+      <p>100% Online</p> -->
 
       <!-- FORMULÁRIO -->
-      <div class="secaoDestaqueFormulario">
+      <!-- <div class="secaoDestaqueFormulario">
         <input type="email"  placeholder="E-mail" required>
         <button type="button">Subscribe</button>
-      </div>
+      </div> -->
 
     </section>
 
@@ -70,27 +71,26 @@
         <!-- COLUNA DIREITA -->
         <div class="flex-col">
 
-          <figure>
+          <figure >
             <img src="assets/img/python.png" alt="python">
             <figcaption>python</figcaption>  
           </figure>      
 
         </div>
-
         <!-- COLUNA ESQUERDA -->
-        <div class="flex-col">
+        <div class="flex-col js" >
 
-            <figure>
-              <img src="assets/img/JavaScript-logo.png" alt="Java Script">
+            <figure >
+              <img id="js" src="assets/img/JavaScript-logo.png" alt="Java Script">
               <figcaption>Java Script</figcaption>  
             </figure>      
   
           </div>
 
         <!-- COLUNA DIREITA -->
-        <div class="flex-col">
+        <div class="flex-col js" >
 
-            <h2> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
+            <h2 id="center"> LOREM IPSUM DOLOR SIT JAVASCRIPT</h2>
             <ul>
                 <li>The standard Lorem Ipsum passage, used since the 1500s</li>
                 <li>Section 1.10.32 of "de Finibus Bonorum et Malorum" by Cicero in 45 BC</li>
@@ -100,7 +100,6 @@
             </ul>
 
         </div>
-
         
 
       </article>
@@ -163,15 +162,17 @@
     <section class="secaoCalendar">
 
       <h2>SCHEDULE</h2>
-      <p>Lorem ipsum dolor sit schedule</p>
+      <p id="sem-borda">Lorem ipsum dolor sit schedule</p>
 
       <!-- LISTA CALENDÁRIO -->
       <ul class="calendario">
 
         <li>
-          <span class="calendario-data">22/02</span>
+          <div class="calendario-data">
+            <span >22/02</span>
+          </div>
           <h3>HTML/CSS</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
             <span>7mp</span>
             <button>Sign Up</button>
@@ -179,7 +180,9 @@
         </li>
 
         <li>
-          <span class="calendario-data">23/02</span>
+          <div class="calendario-data">
+            <span>23/02</span>
+          </div>
           <h3>JavaScript</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
@@ -189,7 +192,9 @@
         </li>
 
         <li>
-          <span class="calendario-data">24/02</span>
+          <div class="calendario-data">
+            <span >24/02</span>
+          </div>
           <h3>Python</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo consectetur quae commodi sed eos repellendus adipisci architecto provident, et animi sapiente, rerum fugit quod voluptatum officia ipsum maxime nobis explicabo!</p>
           <div class="calendario-data-rodape">
