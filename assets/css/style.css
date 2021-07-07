@@ -1,34 +1,96 @@
-:root{
-    --color-white: #FFFFFF;
-    --color-lightblue:#007aff;
-    --color-darkblue:#00043e;
-    --color-gray:#303030;
-    --color-lightgray:#818181;
-    --font-h2: Montserrat;
-    --main-font:Lato;
-    --menu-font-size: 13px;
-    --titulo-destaque-font-size:63px;
-    --subtitulo-destaque-font-size: 21px;
-    --subscribe-button-destaque-font-size: 14px;
-    --titulo-sobre-font-size:24px;
-    --texto-sobre-font-size:19px;
-    --titulo-curses-font-size:19px;
-    --texto-curses-font-size: 15px;
-    --datas-calendario-font-size: 36px;
-    --titulo-calendario-font-size:19px;
-    --texto-calendario-font-size:15px;
-    --botao-calendario-font-size:35px;
-    --informações-contato-font-size:15px;
-    --color-gray-background:#f6f6f6;
-
-
-}
 
 body{
     font-family:(--main-font);
     line-height: 1.6;
 }
 main{
+}
+/* header */
+.topo {
+    background-color: var(--color-darkblue);
+    width: 100%;
+    height: 10%;
+    display:flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding:5px;
+    align-items: center;
+}
+.large-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+.large-container figure {
+    width: 50px;
+}
+.header_nav{
+    display: none;
+    width: 50%;
+    margin-right: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.header_nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 30%;   
+}
+.header_nav ul li a{
+    color:var(--color-white);
+    font-size: var(--menu-font-size);
+    margin:10px;
+    font-weight: 100;
+    text-decoration: none;
+}
+#nav-menu {
+    display: flex;
+    color:var(--color-white);
+    font-size: 20px;
+    position:absolute;
+    right: 10%;
+    top:35px
+}
+/* Input/button */
+.secaoDestaque {
+    background-image: url("/assets/img/background-destaque.webp");
+    width: 100%;
+    height: 50vh;
+    color:var(--color-white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.secaoDestaque h2 {
+    font-size: var(--titulo-sobre-font-size);
+    font-weight: 100;
+    flex-wrap: wrap-reverse;
+    align-self: center;
+}
+.secaoDestaque p {
+    font-size: var(--texto-sobre-font-size);
+    padding: 10px;
+}
+.secaoDestaqueFormulario{
+}
+.secaoDestaqueFormulario button {
+    border:none;
+    outline: none;
+    padding: 10px;
+    margin:0px;
+    transform: translateX(-3px);
+    background-color: var(--color-lightblue);
+    color:var(--color-white);
+    border-radius: 4px;
+}
+.secaoDestaqueFormulario input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
 }
 /*Sobre*/
 .secaoSobre{
@@ -67,10 +129,7 @@ main{
     padding:5%;
     margin: 3rem 0;
 }
-.secaoSobre button:hover{
-    background: var(--color-darkblue);
-    color: var(--color-white)
-}
+
 .secaoSobre img{
     width:100%;
 }
@@ -104,10 +163,7 @@ main{
     width: 50%;
     margin-top: 3rem ;
 }
-.secaoCursos li:hover{
-    background-color:  var(--color-darkblue);
-    border-radius: 15px;
-} 
+
 .secaoCursos li p{
     color: var(--color-lightgray);
 }
@@ -136,6 +192,7 @@ main{
     justify-content: center;
     align-items: center;
 }
+
 .secaoCalendar li{
     border: 1px solid var(--color-darkblue);
 }
@@ -170,19 +227,122 @@ main{
     margin: 2rem 0;
     border: none
 }
-.secaoCalendar button:hover{
-    background-color: var(--color-darkblue);
-    cursor:pointer
-}
+
 /*calendario*/
+
+
+
 
 /*extras*/
 figcaption{
     display:none;
 }
+h2 {
+    font-family: Montserrat;
+}
 /*extras*/
 
-@media screen and (min-width:800px) {
+
+
+/* contacts */
+.secaoContato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-gray-background);
+    color:var(--color-lightgray);
+    font-size: var(--informações-contato-font-size);
+}
+.secaoContato h2 {
+    color: black;
+    padding: 5% 30% 5% 0;
+}
+.secaoContato .flex{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex .flex-center{
+    justify-content: start;
+    width: 50%;
+}
+.secaoContato .flex-col{
+    display: flex;
+    margin:0 auto;
+}
+.secaoContato form{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.secaoContato-informacoes{
+    margin: 0 auto;
+}
+
+.secaoContato-informacoes a{
+    color:var(--color-gray);
+    text-decoration: none;
+}
+.secaoContato-informacoes ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+}
+.secaoContato-informacoes ul li {
+    padding: 10px;
+}
+.secaoContato-informacoes p{
+    text-align: start;
+}
+
+.form-input-model input{
+    outline-color:var(--color-lightgray);
+    margin-bottom:5%;
+    width: 180px;
+    height: 20;
+}
+#mensagem {
+    width:180px;
+    height: 80px;
+}
+.form-input-model label{
+    display:none;
+}
+#input-send{
+    border:var(--color-gray);
+    outline-color:var(--color-gray);
+    color:var(--color-gray);
+    width: 45px;
+    right: 0;
+    height: 22px;
+}
+footer p{
+    display: none;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10% 0 5% 0;
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    /* header */
+    .header_nav{
+        display: flex;
+        width: 50%;
+        margin-right: 5%;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
     .flex-col{
         width: 50%;
     }
@@ -215,7 +375,66 @@ figcaption{
     .secaoCalendar li{
         width: 30% ;
         margin:2%;
-        
+    }
+    #nav-menu {
+        display: none;
     }
 
-}
+    .secaoContato {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+    .secaoContato .flex-col{
+        width: 30%;
+        
+    }
+    .secaoContato .flex .flex-center{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .secaoContato form{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .flex-col .flex-row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+    }
+    form .form-input-model{
+        margin: 10px;
+    }
+    .flex-comment{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+    footer p {
+        display: block;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .secaoSobre button:hover{
+        background: var(--color-darkblue);
+        color: var(--color-white)
+    }
+    .secaoCursos li:hover{
+        background-color:  var(--color-darkblue);
+        border-radius: 15px;
+    } 
+    .secaoCalendar button:hover{
+        background-color: var(--color-darkblue);
+        cursor:pointer
+    }
+  }

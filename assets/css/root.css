@@ -1,4 +1,4 @@
-root{
+:root{
     --color-white: #FFFFFF;
     --color-lightblue:#007aff;
     --color-darkblue:#00043e;
@@ -19,4 +19,5 @@ root{
     --texto-calendario-font-size:15px;
     --botao-calendario-font-size:35px;
     --informações-contato-font-size:15px;
+    --color-gray-background:#f6f6f6;
 }

@@ -5,8 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="icon-96x96.webp">
+  <script src="https://kit.fontawesome.com/753e6c4a35.js" crossorigin="anonymous"></script>
+  <link rel=”stylesheet” href=”https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css”>
   <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/root.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
   <title>Landing Page Kenzie Academy</title>
 </head>
 <body>
@@ -16,19 +20,23 @@
 
     <div class="large-container">
       <!-- LOGO -->
-      <!-- <figure>
+      <figure>
         <img src="assets/img/logo.svg" alt="Logo Kenzie Academy">
         <figcaption>Logo Kenzie Academy</figcaption>  
-      </figure> -->
+      </figure>
 
       <!-- MENU DE NAVEGAÇÃO -->
-      <!-- <nav>
+
+        <div class="nav_icon">
+         <i id="nav-menu" class="fas fa-align-justify"></i>
+        </div>
+      <nav class="header_nav">
         <ul>
           <li><a href="#1">Sobre a Kenzie</a></li>
           <li><a href="#2">Agenda</a></li>
           <li><a href="#3">Contato</a></li>
         </ul>
-      </nav> -->
+      </nav> 
     </div> 
 
   </header>
@@ -39,21 +47,21 @@
     <!-- ÁREA DE DESTAQUE -->
     <section class="secaoDestaque">
 
-      <!-- <h2>Lorem ipsum dolor sit Python</h2>
-      <p>100% Online</p> -->
+      <h2>Lorem ipsum dolor sit Python</h2>
+      <p>100% Online</p> 
 
       <!-- FORMULÁRIO -->
-      <!-- <div class="secaoDestaqueFormulario">
+      <div class="secaoDestaqueFormulario">
         <input type="email"  placeholder="E-mail" required>
-        <button type="button">Subscribe</button>
-      </div> -->
+        <button id="button-subscribe" type="button">Subscribe</button>
+      </div>
 
     </section>
 
     <!-- SEÇÃO SOBRE -->
     <section class="secaoSobre">
-
-      <article class="flex">
+      
+      <div class="flex">
         
         <!-- COLUNA ESQUERDA -->
         <div class="flex-col">
@@ -80,13 +88,12 @@
         <!-- COLUNA ESQUERDA -->
         <div class="flex-col js" >
 
-            <figure >
-              <img id="js" src="assets/img/JavaScript-logo.png" alt="Java Script">
-              <figcaption>Java Script</figcaption>  
-            </figure>      
-  
-          </div>
+          <figure >
+            <img id="js" src="assets/img/JavaScript-logo.png" alt="Java Script">
+            <figcaption>Java Script</figcaption>  
+          </figure>      
 
+        </div>
         <!-- COLUNA DIREITA -->
         <div class="flex-col js" >
 
@@ -98,10 +105,8 @@
                 <li>Section 1.10.33 of "de Finibus Bonorum et Malorum", by Cicero in 45 BC</li>
                 <li>1914 translation by H. Rackham</li>
             </ul>
-
         </div>
-        
-
+      </div>  
       </article>
 
     </section>
@@ -208,54 +213,55 @@
     </section>
 
     <section class="secaoContato">
-
+        <h2>Contact</h2>
       <div class="flex">
+        <div class="flex-center">
+            <!-- COLUNA LADO ESQUERDO -->
+            <div class="flex-col">
+              
+              <div class="secaoContato-informacoes">
+              
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                
+                <ul>
+                  <li><i class="fi-rr-marker"></i><a href="#">Chicago, US</a> </li>
+                  <li><i class="fi-rr-smartphone"></i><a href="tel:001515151515">+00 1515151515</a></li>
+                  <li><i class="fi-rr-envelope"></i><a href="malito:myemail@something.com">myemail@something.com</a></li>
+                </ul>
 
-        <!-- COLUNA LADO ESQUERDO -->
-        <div class="flex-col">
-          
-          <div class="secaoContato-informacoes">
-          
-            <p>Contact us and we'll get back to you within 24 hours.</p>
-            
-            <ul>
-              <li><a href="#">Chicago, US</a> </li>
-              <li><a href="tel:001515151515">+00 1515151515</a></li>
-              <li><a href="malito:myemail@something.com">myemail@something.com</a></li>
-            </ul>
+              </div>
 
+            </div>
+
+            <!-- COLUNA LADO DIRETO -->
+            <div class="flex-col">
+              
+              
+              
+              <form action="">
+                <div class="flex-row">
+                  <div class="form-input-model">
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="Name" id="nome" name="nome">
+                  </div>
+
+                  <div class="form-input-model">
+                    <label for="email">E-mail</label>
+                    <input type="text" placeholder="E-mail" id="email" name="email">
+                  </div>
+                </div>
+                <div class="flex-comment">
+                  <div class="form-input-model">
+                    <label for="mensagem">E-mail</label>
+                    <textarea placeholder="comment" name="mensagem" id="mensagem"></textarea>
+                  </div>
+
+                  <input id="input-send"type="submit" value="Send">
+                </div>
+              </form>
+              
           </div>
-
-        </div>
-
-        <!-- COLUNA LADO DIRETO -->
-        <div class="flex-col">
-          
-          <h2>Contact</h2>
-          
-          <form action="">
-
-            <div class="form-input-model">
-              <label for="nome">Nome</label>
-              <input type="text" placeholder="Name" id="nome" name="nome">
-            </div>
-
-            <div class="form-input-model">
-              <label for="email">E-mail</label>
-              <input type="text" placeholder="E-mail" id="email" name="email">
-            </div>
-
-            <div class="form-input-model">
-              <label for="mensagem">E-mail</label>
-              <textarea name="mensagem" id="mensagem"></textarea>
-            </div>
-
-            <input type="submit" value="Send">
-
-          </form>
-
-        </div>
-
+      </div>
       </div>
 
     </section>
@@ -263,11 +269,11 @@
   </main>
 
   <footer>
+    <i class="fi-rr-angle-up"></i>
     <p>Kenzie Academy - <a href="kenzie.com.br">kenzie.com.br</a></p>
   </footer>
 
   <script src="assets/js/script.js"></script>
 </body>
 </html>
-
 
