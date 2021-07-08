@@ -55,8 +55,9 @@ main{
 }
 /* Input/button */
 .secaoDestaque {
-    background-image: url("/assets/img/background-destaque.webp");
-    width: 100%;
+    background-image: url("../img/background-destaque.webp");
+    background-size: 100%;
+    width: 100vw;
     height: 50vh;
     color:var(--color-white);
     display: flex;
@@ -108,12 +109,12 @@ main{
 }
 
 .secaoSobre h2{
-    margin: 4rem 0;
+    margin: 3rem 0;
     font-size: var(--titulo-sobre-font-size);
     font-family: var(--font-h2);
 }
 .secaoSobre p{
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 .secaoSobre span{
     color: var(--color-lightgray);
@@ -129,7 +130,6 @@ main{
     padding:5%;
     margin: 3rem 0;
 }
-
 .secaoSobre img{
     width:100%;
 }
@@ -195,6 +195,7 @@ main{
 
 .secaoCalendar li{
     border: 1px solid var(--color-darkblue);
+    margin: 5%
 }
 .secaoCalendar .calendario-data{
     background-color: var(--color-darkblue);
@@ -238,7 +239,7 @@ figcaption{
     display:none;
 }
 h2 {
-    font-family: Montserrat;
+    font-family: var(--font-h2);
 }
 /*extras*/
 
@@ -257,7 +258,7 @@ h2 {
 }
 .secaoContato h2 {
     color: black;
-    padding: 5% 30% 5% 0;
+    padding: 5% 0% ;
 }
 .secaoContato .flex{
     width: 100%;
@@ -350,6 +351,11 @@ footer{
         flex-direction: row;
         columns: 2;
         flex-wrap: wrap;
+
+    }
+    .secaoSobre button{
+        display: block;
+        width: 40%;
     }
     .secaoCursos ul{
         flex-direction: row;
@@ -386,9 +392,7 @@ footer{
         flex-direction: column;
         padding:0;
     }
-    .secaoContato .flex-col{
-        width: 30%;
-        
+    .secaoContato .flex-col{        
     }
     .secaoContato .flex .flex-center{
         width: 100%;
@@ -409,6 +413,7 @@ footer{
     }
     form .form-input-model{
         margin: 10px;
+        width: 95%;
     }
     .flex-comment{
         display: flex;
@@ -436,5 +441,8 @@ footer{
     .secaoCalendar button:hover{
         background-color: var(--color-darkblue);
         cursor:pointer
+    }
+    #mensagem{
+        width:100%
     }
   }
