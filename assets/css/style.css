@@ -444,6 +444,9 @@ footer{
         background-color:  var(--color-darkblue);
         border-radius: 15px;
     } 
+    .secaoCursos h3{
+        color:var(--color-white);
+    }
     .secaoCalendar button:hover{
         background-color: var(--color-darkblue);
         cursor:pointer
