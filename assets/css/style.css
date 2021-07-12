@@ -130,7 +130,7 @@ main{
     border-radius: 5px;
     width: 100%;
     padding:5%;
-    margin: 3rem 0;
+    margin: 2rem 0;
 }
 .secaoSobre img{
     width:100%;
@@ -356,7 +356,8 @@ footer{
     }
     .secaoSobre button{
         display: block;
-        width: 40%;
+        width: 25%;
+        padding: .5rem;
     }
     .secaoCursos ul{
         flex-direction: row;
@@ -385,7 +386,7 @@ footer{
     }
     .secaoCalendar button{
         width:50%;
-        margin:1rem;
+        margin:1rem 20%;
     }
     #nav-menu {
         display: none;
