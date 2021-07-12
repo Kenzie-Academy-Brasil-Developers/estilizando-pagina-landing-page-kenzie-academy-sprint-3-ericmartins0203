@@ -1,7 +1,6 @@
 
 body{
-    font-family:(--main-font);
-    line-height: 1.6;
+    font-family: --main-font;
 }
 main{
 }
@@ -53,6 +52,8 @@ main{
     right: 10%;
     top:35px
 }
+/* header */
+
 /* Input/button */
 .secaoDestaque {
     background-image: url("../img/background-destaque.webp");
@@ -93,6 +94,8 @@ main{
     padding: 10px;
     border-radius: 4px;
 }
+/* Input/button */
+
 /*Sobre*/
 .secaoSobre{
     font-size: var(--texto-sobre-font-size);
@@ -111,7 +114,6 @@ main{
 .secaoSobre h2{
     margin: 3rem 0;
     font-size: var(--titulo-sobre-font-size);
-    font-family: var(--font-h2);
 }
 .secaoSobre p{
     margin: 2rem 0;
@@ -144,6 +146,7 @@ main{
     list-style:disc;
 }
 /*Sobre*/
+
 /*Cursos*/
 .secaoCursos article{
     text-align: center;
@@ -172,6 +175,7 @@ main{
     flex-direction: column;
 }
 /*Cursos*/
+
 /*calendario*/
 .secaoCalendar{
     font-size: var(--texto-calendario-font-size);
@@ -192,7 +196,6 @@ main{
     justify-content: center;
     align-items: center;
 }
-
 .secaoCalendar li{
     border: 1px solid var(--color-darkblue);
     margin: 5%
@@ -215,7 +218,6 @@ main{
 .secaoCalendar span{
     font-size: var(--datas-calendario-font-size);
 }
-
 #sem-borda{
     border:none
 }
@@ -228,7 +230,6 @@ main{
     margin: 2rem 0;
     border: none
 }
-
 /*calendario*/
 
 
@@ -375,12 +376,16 @@ footer{
     .secaoCalendar ul{
         flex-direction: row;
         justify-content: space-around;
-        width: 90vw;
-        
+        width: 70vw;
+        margin:5% auto;
     }
     .secaoCalendar li{
         width: 30% ;
         margin:2%;
+    }
+    .secaoCalendar button{
+        width:50%;
+        margin:1rem;
     }
     #nav-menu {
         display: none;
