@@ -19,7 +19,8 @@ main{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
+    margin: 5px 20px 0px 15px;
 }
 .large-container figure {
     width: 50px;
@@ -71,6 +72,7 @@ main{
     font-weight: 100;
     flex-wrap: wrap-reverse;
     align-self: center;
+    width: 220px;
 }
 .secaoDestaque p {
     font-size: var(--texto-sobre-font-size);
@@ -268,9 +270,10 @@ h2 {
     justify-content: center;
     align-items: center;
 }
-.flex .flex-center{
-    justify-content: start;
-    width: 50%;
+.flex .flex-center {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
 }
 .secaoContato .flex-col{
     display: flex;
@@ -290,14 +293,15 @@ h2 {
     color:var(--color-gray);
     text-decoration: none;
 }
-.secaoContato-informacoes ul{
+.secaoContato-informacoes ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: start;
+    align-items: start;
+    justify-content: space-around;
+    height: 115px;
 }
 .secaoContato-informacoes ul li {
-    padding: 10px;
+  
 }
 .secaoContato-informacoes p{
     text-align: start;
@@ -316,13 +320,15 @@ h2 {
 .form-input-model label{
     display:none;
 }
-#input-send{
-    border:var(--color-gray);
-    outline-color:var(--color-gray);
-    color:var(--color-gray);
+#input-send {
+    border: var(--color-gray);
+    outline-color: var(--color-gray);
+    color: var(--color-gray);
     width: 45px;
-    right: 0;
+    display: flex;
+    justify-content: flex-end;
     height: 22px;
+    margin-left: 127px;
 }
 footer p{
     display: none;
@@ -344,6 +350,9 @@ footer{
         flex-wrap: nowrap;
         justify-content: space-around;
         align-items: center;
+    }
+    .secaoDestaque h2 {
+        width: 100%;
     }
     .flex-col{
         width: 50%;
@@ -421,6 +430,14 @@ footer{
         margin: 10px;
         width: 95%;
     }
+    .form-input-model input {
+        outline-color: var(--color-lightgray);
+        margin-bottom: 5%;
+        width: 285px;
+        height: 26px;
+        display: flex;
+        justify-content: space-around;
+    }
     .flex-comment{
         display: flex;
         flex-direction: column;
@@ -453,5 +470,15 @@ footer{
     }
     #mensagem{
         width:100%
+    }
+    #input-send {
+        border: var(--color-gray);
+        outline-color: var(--color-gray);
+        color: var(--color-gray);
+        width: 45px;
+        display: flex;
+        justify-content: flex-end;
+        height: 22px;
+        margin-left: 151px;
     }
   }
