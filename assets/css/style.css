@@ -7,7 +7,7 @@ main{
 /* header */
 .topo {
     background-color: var(--color-darkblue);
-    width: 100%;
+    width: cover;
     height: 10%;
     display:flex;
     justify-content: flex-end;
@@ -57,8 +57,7 @@ main{
 
 /* Input/button */
 .secaoDestaque {
-    background-image: url("../img/background-destaque.webp");
-    background-size: 100%;
+    background-color: var(--color-darkblue);
     width: 100vw;
     height: 50vh;
     color:var(--color-white);
@@ -88,13 +87,17 @@ main{
     transform: translateX(-3px);
     background-color: var(--color-lightblue);
     color:var(--color-white);
-    border-radius: 4px;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
 }
 .secaoDestaqueFormulario input{
-    border: none;
+    margin-right: 0;
+    border:none;
     outline: none;
     padding: 10px;
-    border-radius: 4px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 /* Input/button */
 
@@ -351,6 +354,10 @@ footer{
         justify-content: space-around;
         align-items: center;
     }
+    .secaoDestaque{
+        background-image: url("../img/background-destaque.webp");
+        background-size: cover;
+    }
     .secaoDestaque h2 {
         width: 100%;
     }
@@ -428,7 +435,7 @@ footer{
     }
     form .form-input-model{
         margin: 10px;
-        width: 95%;
+        width: 97%;
     }
     .form-input-model input {
         outline-color: var(--color-lightgray);
@@ -443,6 +450,7 @@ footer{
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
+        width:100%
     }
     footer p {
         display: block;
@@ -478,7 +486,6 @@ footer{
         width: 45px;
         display: flex;
         justify-content: flex-end;
-        height: 22px;
-        margin-left: 151px;
+        margin-right: 10px;
     }
   }
