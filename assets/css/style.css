@@ -1,6 +1,6 @@
 
 body{
-    font-family: --main-font;
+    font-family: var(--main-font);
 }
 main{
 }
@@ -66,6 +66,7 @@ main{
     justify-content: center;
     text-align: center;
 }
+
 .secaoDestaque h2 {
     font-size: var(--titulo-sobre-font-size);
     font-weight: 100;
@@ -133,15 +134,22 @@ main{
     font-size: var(--subscribe-button-destaque-font-size);
     cursor: pointer;
     border-radius: 5px;
-    width: 100%;
+    width: 90%;
     padding:5%;
     margin: 2rem 0;
 }
 .secaoSobre img{
     width:100%;
 }
-.secaoSobre #js{
-    width:70%
+.secaoSobre .flex-col .js{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    padding-top: 10%;
+}
+#js{
+    width: 50%;
 }
 #center{
     text-align: center; 
@@ -160,6 +168,7 @@ main{
 .secaoCursos h3{
     font-size: var(--titulo-curses-font-size);
     margin-bottom: 2rem;
+    color: black;
 }
 .secaoCursos h2{
     font-size: var(--titulo-sobre-font-size);
@@ -168,7 +177,7 @@ main{
     margin: 1rem 0;
 }
 .secaoCursos img{
-    width: 50%;
+    width: 30%;
     margin-top: 3rem ;
 }
 
@@ -203,7 +212,9 @@ main{
 }
 .secaoCalendar li{
     border: 1px solid var(--color-darkblue);
-    margin: 5%
+    margin: 5%;
+    width: 67%;
+    line-height: 1.5;
 }
 .secaoCalendar .calendario-data{
     background-color: var(--color-darkblue);
@@ -211,6 +222,7 @@ main{
     font-size: var(--datas-calendario-font-size);
     width:100%;
     padding:2rem;
+    
 }
 .secaoCalendar h3{
     margin: 2rem 0;
@@ -225,6 +237,12 @@ main{
 }
 #sem-borda{
     border:none
+}
+.secaoCalendar .calendario-data-rodape{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .secaoCalendar button{
     background:var(--color-lightblue);
@@ -261,6 +279,8 @@ h2 {
     background-color: var(--color-gray-background);
     color:var(--color-lightgray);
     font-size: var(--informações-contato-font-size);
+    margin-top: 50px;
+    padding-top: 50px;
 }
 .secaoContato h2 {
     color: black;
@@ -346,6 +366,12 @@ footer{
 
 @media only screen and (min-width: 600px) {
     /* header */
+    header img{
+        position: absolute;
+        left: 20%;
+        top: 0;
+        width: 30px;
+    }
     .header_nav{
         display: flex;
         width: 50%;
@@ -361,18 +387,29 @@ footer{
     .secaoDestaque h2 {
         width: 100%;
     }
-    .flex-col{
+    .secaoDestaque .flex-col{
         width: 50%;
+        display: block;
     }
     .secaoSobre  .flex{
+        display: flex;
         flex-direction: row;
         columns: 2;
         flex-wrap: wrap;
-
+        align-items: center;
+    }
+    .secaoSobre img {
+        width: 130%;
+    }
+    #js{
+        width: 60%;
+    }
+    .secaoSobre .flex-col{
+        width: 50%;
     }
     .secaoSobre button{
         display: block;
-        width: 25%;
+        width: 80px;
         padding: .5rem;
     }
     .secaoCursos ul{
@@ -386,6 +423,9 @@ footer{
     .secaoCursos li{
         width: 30%;
     } 
+    .secaoCursos h3{
+        color:black
+    }
     .secaoCursos img{
         width: 102px;
         height: 102px;
@@ -401,8 +441,9 @@ footer{
         margin:2%;
     }
     .secaoCalendar button{
-        width:50%;
+        width:70px;
         margin:1rem 20%;
+
     }
     #nav-menu {
         display: none;
@@ -466,12 +507,15 @@ footer{
         color: var(--color-white)
     }
     .secaoCursos li:hover{
-        background-color:  var(--color-darkblue);
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
         border-radius: 15px;
     } 
-    .secaoCursos h3{
-        color:var(--color-white);
-    }
+    
     .secaoCalendar button:hover{
         background-color: var(--color-darkblue);
         cursor:pointer
